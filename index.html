@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/titulo.png" alt="Armando's FAST FOOD">
+    <img src="./images/titulo2.png" alt="Haz tu menu">
+    <div id="tabla-de-precios" class="container-fluid">
+        <div class="row"><div class="col">Tabla de precios</div></div>
+        <div class="row principales">
+            <div class="col">Platos principales</div>
+            <div class="col-2">Pizza vegetal: 14.95€</div>
+            <div class="col-2">Pizza peperoni: 16.90€</div>
+            <div class="col-2">Hamburguesa clásica: 4.25€</div>
+            <div class="col-2">Perrito caliente: 3.50€</div>
+        </div>
+        <div class="row entrantes">
+            <div class="col">Entrantes</div>
+            <div class="col-2">Patatas fritas: 2.50€</div>
+            <div class="col-2">Nuggets de pollo: 2.25€</div>
+            <div class="col-2">Alitas de pollo: 3.25€</div>
+            <div class="col-2">Ensalada: 2.75€</div>
+        </div>
+        <div class="row bebidas">
+            <div class="col">Bebidas</div>
+            <div class="col-2">Agua: 0.75€</div>
+            <div class="col-2">Zumo de naranja: 1.15€</div>
+            <div class="col-2">Refresco de cola: 1.75€</div>
+            <div class="col-2">Cerveza sin alcohol: 1.95€</div>
+        </div>
+        <div class="row postres">
+            <div class="col">Postres</div>
+            <div class="col-2">Flan: 0.80€</div>
+            <div class="col-2">Tarta de fresa: 2.25€</div>
+            <div class="col-2">Batido de frambuesa: 2.15€</div>
+            <div class="col-2">Café: 1.50€</div>
+        </div>
+    </div> 
+    <div id="contenedor">
+    <section>
+        <div class="container-fluid mostrador">
+            <div id="primer-estante" class="row">
+                <div class="col-3">
+                    <img src="./images/pizza-vegetal.png" alt="Pizza vegetal" ondragstart="apuntarPrecio(14.95)" ondrag="encenderCesta()" ondragend="apagarCesta()">
+                </div>
+                <div class="col-3"><img src="./images/pizza-peperoni.png" alt="Pizza peperoni" ondragstart="apuntarPrecio(16.9)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/hamburguesa.png" alt="Hamburguesa clásica" ondragstart="apuntarPrecio(4.25)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/perrito.png" alt="Perrito caliente" ondragstart="apuntarPrecio(3.5)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+            </div>
+            <div id="segundo-estante" class="row">
+                <div class="col-3"><img src="./images/patatas.png" alt="Patatas fritas" ondragstart="apuntarPrecio(2.5)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/nuggets.png" alt="Nuggets de pollo" ondragstart="apuntarPrecio(2.25)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/alitas.png" alt="Alitas de pollo" ondragstart="apuntarPrecio(3.25)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/ensalada.png" alt="Ensalada" ondragstart="apuntarPrecio(2.75)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+            </div>
+            <div id="tercer-estante" class="row">
+                <div class="col-3"><img src="./images/agua.png" alt="Agua" ondragstart="apuntarPrecio(0.75)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/zumo.png" alt="Zumo de naranja" ondragstart="apuntarPrecio(1.15)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/refresco.png" alt="Refresco de cola" ondragstart="apuntarPrecio(1.75)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/cerveza.png" alt="Cerveza sin alcohol" ondragstart="apuntarPrecio(1.95)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+            </div>
+            <div id="cuarto-estante" class="row">
+                <div class="col-3"><img src="./images/flan.png" alt="Flan" ondragstart="apuntarPrecio(0.80)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/tarta.png" alt="Tarta de fresa" ondragstart="apuntarPrecio(2.25)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/batido.png" alt="Batido de frambuesa" ondragstart="apuntarPrecio(2.15)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+                <div class="col-3"><img src="./images/cafe.png" alt="Café" ondragstart="apuntarPrecio(1.5)" ondrag="encenderCesta()" ondragend="apagarCesta()"></div>
+            </div>
+            
+        </div>
+    </section>
+    <aside>
+        <div id="cesta" ondrop="precioTotal(event)" ondragover="permitirDrop(event)"></div>
+        <div id="lista">
+            <p id="encabezado-lista">Tu menú:</p>
+        </div>
+        <div id="papelera" ondrop="borrarArticuloLista(event)" ondragover="permitirDrop(event)"></div>
+    </aside>
+    </div>
+    <footer>
+        <p>Copyright: Armando Ramos Sánchez</p>
+    </footer>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
