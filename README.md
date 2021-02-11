@@ -1,1 +1,1 @@
-# Reto 2 FRONTEND - Sitio Web Dinámico
+# Reto 2 FRONTEND - Showcase Dinámico
